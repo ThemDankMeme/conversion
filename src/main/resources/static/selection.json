@@ -1,0 +1,12 @@
+{
+  "Imperial": {
+    "Length": ["Inches To Centimeters", "Yards To Meters", "Miles To Kilometers"],
+    "Mass": ["Ounces To Grams","Pounds To Kilograms"],
+    "Temperature": ["Fahrenheit To Celsius"]
+  },
+  "Metric": {
+    "Length": ["Centimeters To Inches", "Meters To Yards", "Kilometers To Miles"],
+    "Mass": ["Grams To Ounces","Kilograms To Pounds"],
+    "Temperature": ["Celsius To Fahrenheit"]
+  }
+}
