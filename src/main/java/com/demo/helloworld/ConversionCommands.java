@@ -2,7 +2,7 @@ package com.demo.helloworld;
 import java.util.HashMap;
 
 public class ConversionCommands {
-    public ConversionCommands(){};
+    public ConversionCommands(){}
     public HashMap<String, Object> execute(HashMap<String, Object> data) throws Exception{
         throw new Exception("Method not implemented");
     }
