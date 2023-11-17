@@ -2,7 +2,6 @@ package com.demo.helloworld;
 
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
@@ -11,11 +10,6 @@ import java.util.HashMap;
 @RestController
 public class ConversionController {
 
-    @RequestMapping("/hello")
-    public String sayHello(@RequestParam(value = "myName", defaultValue = "World") String name) {
-        return String.format("Hello %s!", name);
-
-    }
     @RequestMapping(value = "/convert")
     public HashMap<String, Object> convert(@RequestBody HashMap<String, Object> data)  {
         try {
