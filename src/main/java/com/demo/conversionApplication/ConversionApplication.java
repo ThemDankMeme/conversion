@@ -1,4 +1,4 @@
-package com.demo.helloworld;
+package com.demo.conversionApplication;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

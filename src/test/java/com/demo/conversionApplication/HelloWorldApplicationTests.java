@@ -1,4 +1,4 @@
-package com.demo.helloworld;
+package com.demo.conversionApplication;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

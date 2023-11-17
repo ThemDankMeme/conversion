@@ -1,4 +1,4 @@
-package com.demo.helloworld;
+package com.demo.conversionApplication;
 import java.util.HashMap;
 
 public class ConversionCommands {
@@ -18,6 +18,4 @@ public class ConversionCommands {
     protected String getStringValue(HashMap<String, Object> data, String value){
         return (String) data.get(value);
     }
-
-
 }
