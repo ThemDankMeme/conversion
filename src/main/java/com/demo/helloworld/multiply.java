@@ -1,10 +1,18 @@
 package com.demo.helloworld;
 
-import java.util.Map;
+import java.util.HashMap;
 
-public class multiply extends calculations {
+public class multiply extends ConversionCommands {
 
-    public double execute(Map<String, Double> data) {
+    private final String firstValue;
+    private final String secondValue;
 
+    public multiply(String firstValue, String secondValue) {
+        this.firstValue = firstValue;
+        this.secondValue = secondValue;
+    }
+
+    public HashMap<String, Object> execute(HashMap<String, Object> data) throws Exception {
+        return null;
     }
 }
