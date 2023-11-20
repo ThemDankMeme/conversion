@@ -75,8 +75,13 @@ class HelloWorldApplicationTests {
 	void testRetrieveJson() throws Exception {
 		contextLoads();
 		ConversionCommands jsonTest = new RetrieveJson("none.json","doesn'tmatter","nope");
-		jsonTest.execute(test1);
-		assertEquals(IOException.class, "File Not Found", "No file none.json");
+		try{
+			jsonTest.execute(test1);
+		}catch (IOException err){
+			assertEquals("File Not Found", err.getMessage() , "No file none.json");
+		}
+
+
 
 	}
 
