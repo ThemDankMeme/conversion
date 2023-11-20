@@ -1,4 +1,5 @@
-package com.demo.conversionApplication;
+package com.demo.conversionApplication.classes;
+
 import java.util.HashMap;
 
 public class Execution extends ConversionCommands {

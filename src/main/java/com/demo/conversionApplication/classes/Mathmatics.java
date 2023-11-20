@@ -1,4 +1,6 @@
-package com.demo.conversionApplication;
+package com.demo.conversionApplication.classes;
+import com.demo.conversionApplication.classes.ConversionCommands;
+
 import java.util.HashMap;
 
 public class Mathmatics extends ConversionCommands {

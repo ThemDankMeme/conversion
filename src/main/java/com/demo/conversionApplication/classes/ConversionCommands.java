@@ -1,4 +1,4 @@
-package com.demo.conversionApplication;
+package com.demo.conversionApplication.classes;
 import java.util.HashMap;
 
 public class ConversionCommands {
@@ -15,9 +15,7 @@ public class ConversionCommands {
         return (double) data.get(value);
     }
 
-    protected void addToHashMap(HashMap<String, Object> data, String key, Object value){
-        data.put(key, value);
-    }
+    protected void addToHashMap(HashMap<String, Object> data, String key, Object value){data.put(key, value);}
 
     protected String getStringValue(HashMap<String, Object> data, String value) throws Exception {
         if(!data.containsKey(value))

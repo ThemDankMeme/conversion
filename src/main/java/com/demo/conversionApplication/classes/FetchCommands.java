@@ -1,7 +1,8 @@
-package com.demo.conversionApplication;
+package com.demo.conversionApplication.classes;
+
 import java.util.HashMap;
 
-public class FetchCommands extends ConversionCommands{
+public class FetchCommands extends ConversionCommands {
     public ConversionCommands[] commandPattern(HashMap<String, Object> data){
         ConversionCommands[] commands = new ConversionCommands[0];
         if(data.get("type").equals("temperature")){

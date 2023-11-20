@@ -1,4 +1,5 @@
-package com.demo.conversionApplication;
+package com.demo.conversionApplication.classes;
+import com.demo.conversionApplication.classes.ConversionCommands;
 import org.springframework.core.io.ClassPathResource;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
@@ -73,9 +74,14 @@ public class RetrieveJson extends ConversionCommands {
 //        ObjectMapper map = new ObjectMapper();
 //        HashMap<String, Object> myMap = (HashMap<String, Object>)map.readValue((DataInput) resource, HashMap.class);
 //        System.out.println(myMap);
+        try{
         InputStream json = new ClassPathResource("public/"+name).getInputStream();
         String output = this.stringBuilder(json);
         return this.convertStringToHashMap(output);
+        }catch (IOException err){
+            throw new IOException("File Not Found");
+        }
+
     }
 
     public HashMap<String, Object> convertStringToHashMap(String list){
