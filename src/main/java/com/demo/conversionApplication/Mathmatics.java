@@ -32,8 +32,6 @@ public class Mathmatics extends ConversionCommands {
                 }
                 else
                     throw new Exception("Can't divide by Zero");
-//                result = this.getNumericValue(data, this.value1) / this.getNumericValue(data, this.value2);
-//                break;
             default:
                 break;
         }

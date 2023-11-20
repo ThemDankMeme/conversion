@@ -1,5 +1,4 @@
 package com.demo.conversionApplication;
-
 import java.util.HashMap;
 
 public class FetchCommands extends ConversionCommands{
@@ -10,20 +9,20 @@ public class FetchCommands extends ConversionCommands{
             this.addToHashMap(data, "difference", 32.0);
             this.addToHashMap(data, "nine", 9.0);
             this.addToHashMap(data, "five", 5.0);
-            if(data.get("unit").equals("celsius")){
+            if(data.get("unit").equals("CelsiusToFahrenheit")){
                 //converting Celsius to Fahrenheit
                 commands = new ConversionCommands[]{
                         new Mathmatics("convertingValue", "nine","*","val1"),
                         new Mathmatics("val1", "five", "/", "val2"),
-                        new Mathmatics("val2", "difference", "+", "result")
+                        new Mathmatics("val2", "difference", "+", "results")
 
                 };
-            } else if (data.get("unit").equals("fahrenheit")) {
+            } else if (data.get("unit").equals("FahrenheitToCelsius")) {
                 //converting Fahrenheit to Celsius
                 commands = new ConversionCommands[]{
                         new Mathmatics("convertingValue", "difference","-","val1"),
                         new Mathmatics("val1", "five", "*", "val2"),
-                        new Mathmatics("val2", "nine", "/", "result")
+                        new Mathmatics("val2", "nine", "/", "results")
                 };
             }
 

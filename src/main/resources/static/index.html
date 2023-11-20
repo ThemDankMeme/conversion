@@ -1,46 +1,11 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
     <title>Your first Spring application</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" href="styling.css">
-    <script type="module">
-        import {getRelativeJson} from "./sourceJSON.js";
-
-        const input = await getRelativeJson('./selection.json');
-        create_fields("unit_types",input);
-
-
-        function create_fields(div_id, data){
-            const div = document.getElementById(div_id);
-            div.innerHTML = "";
-            data.forEach()
-            console.log(data);
-        }
-
-        function create_selections(data){
-
-        }
-
-
-    </script>
 </head>
 <body>
     <p>What would you like to convert?</p>
-    <select name="unit_types" id="type" onchange="enableTypeSelection(this)">
-        <option value="imperial">Imperial to Metric</option>
-        <option value="metric">Metric to Imperial</option>
-    </select>
-    <select name="unit_measurements" id="measurements" class="d-none">
-        <option value="length">Length</option>
-        <option value="mass">Mass</option>
-        <option value="temperature">Temperature</option>
-    </select>
-
-    <select name="convert_from" id="">
-        <option value="imperial">Imperial to Metric</option>
-        <option value="metric">Metric to Imperial</option>
-    </select>
 </body>
 
 

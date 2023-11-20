@@ -3,7 +3,6 @@ import java.util.HashMap;
 
 public class Execution extends ConversionCommands {
 
-
     public Execution( ){
 
     }
@@ -14,7 +13,5 @@ public class Execution extends ConversionCommands {
         }
         return data;
     }
-
-
 }
 

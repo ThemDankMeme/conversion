@@ -8,6 +8,10 @@ public class ConversionCommands {
     }
 
     protected double getNumericValue(HashMap<String, Object> data, String value){
+        if(data.get(value).getClass().getSimpleName().equals("Integer")){
+            int val = (int) data.get(value);
+            return (double) val;
+        }
         return (double) data.get(value);
     }
 
@@ -15,7 +19,9 @@ public class ConversionCommands {
         data.put(key, value);
     }
 
-    protected String getStringValue(HashMap<String, Object> data, String value){
+    protected String getStringValue(HashMap<String, Object> data, String value) throws Exception {
+        if(!data.containsKey(value))
+            throw new Exception("Key not contained");
         return (String) data.get(value);
     }
 }
